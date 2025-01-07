@@ -15,12 +15,13 @@
 | **deliverability_analysis** | [**DeliverabilityAnalysis**](DeliverabilityAnalysis.md) |  | [optional] |
 | **lob_confidence_score** | [**LobConfidenceScore**](LobConfidenceScore.md) |  | [optional] |
 | **object** | **String** |  | [optional][default to &#39;us_verification&#39;] |
+| **transient_id** | **String** | ID that is returned in the response body for the verification  | [optional] |
 | **error** | [**BulkError**](BulkError.md) |  | [optional] |
 
 ## Example
 
 ```ruby
-require 'openapi_client'
+require 'lob'
 
 instance = Lob::UsVerificationOrError.new(
   id: null,
@@ -34,6 +35,7 @@ instance = Lob::UsVerificationOrError.new(
   deliverability_analysis: null,
   lob_confidence_score: null,
   object: null,
+  transient_id: null,
   error: null
 )
 ```
